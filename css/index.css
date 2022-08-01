@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+
+.wrap{
+     margin: 0 auto;
+}
+
+.h_logo img{
+     width: 10%;
+}
+
+header{
+     width: 100%;
+     display: inline-block;
+     margin: 0 auto;
+     background-color: aqua;
+}
+main{
+     background-color: #fff;
+}

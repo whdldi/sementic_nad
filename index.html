@@ -13,8 +13,9 @@
   <script src="lib/Semantic-UI-CSS-master/semantic.js"></script>
   <!-- 잘 되는지 확인하기 위해 개발자 모드의 network로 들어가 reload 하면 name에 다운로드 받는지 확인가능 빨간색이면 경로가 잘못된것.-->
 
-  <link href="css/index.css" rel="stylesheet" />
+  <link href="css/font.css" rel="stylesheet" />
   <link href="css/reset.css" rel="stylesheet" />
+  <link href="css/index.css" rel="stylesheet" />
 
 </head>
 
@@ -23,15 +24,14 @@
   <main>
     <header>
       <nav>
-        <a href="#"><i class="arrow left icon"></i></a>
-        <div class="menutext">
-          <p>커뮤니티</p>
-        </div>
-        <a href="#"><i class="bell icon"></i></a>
-        <a href="#"><i class="comment icon"></i></a>
-        <a href="#"><i class="user icon"></i></a>
+        <ul class="header_menu">
+          <li class="nav_left"><a href="#"><i class="arrow left icon"></i></a></li>
+          <li class="nav_txt">커뮤니티</li>
+          <li class="nav_right"><a class="bell" href="#"><i class="bell outline icon"></i></a></li>
+          <li class="nav_right"><a class="comment" href="#"><i class="comment outline icon"></i></a></li>
+          <li class="nav_right"><a class="circle" href="#"><i class="circle icon"></i></a></li>
+        </ul>
       </nav>
-
     </header>
 
 

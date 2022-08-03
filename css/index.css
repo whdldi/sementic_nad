@@ -11,7 +11,7 @@ main {
 
 header {
      width: 100%;
-     margin: 0 auto;
+    /*  margin: 0 auto; */
      background-color: aqua;
 }
 
@@ -23,37 +23,48 @@ header nav {
      margin: 0 auto;
      background-color: aquamarine;
      line-height: 5.0rem;
-     vertical-align: middle;
 }
 
-nav .header_menu{
-     text-align: center;
-     box-sizing: border-box;
+nav .header_menu
+{
+ /*     text-align: center;
+     box-sizing: border-box; */
 }
 
-nav .header_menu li{
+nav .header_menu {
+     display: flex;
+     justify-content: space-between;
+}
+
+i.icon{
+     font-size: 1.8rem;
      display: inline-block;
-}
-
+ }
 /* 커뮤니티 */
 .nav_txt{
      color: #333;
-     padding: 0 20px;
+     padding: 0 10px;
      font-size: 1.6rem;
      font-weight: 600;
      background-color: aqua;
+     width: 80px; 
 }
-i.icon{
-     font-size: 1.8rem;
-     padding: 0 10px;
+.nav_left{
+     background-color: rgb(211, 53, 200);	
      display: inline-block;
- }
+     padding: 0 10px;
+     margin-right: 10px;
+}
+
+/* 오른쪽 알림챗내정보 */
 .nav_right{
+}
+
+
+.nav_right a
+{
      background-color: rgb(255, 156, 156);
      display: inline-block;
 }
-.nav_left{
-     background-color: rgb(211, 53, 200);
-     display: inline-block;
-}
+
 

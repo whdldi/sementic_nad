@@ -1,28 +1,26 @@
 @charset "utf-8";
 
-
-/* .wrap {
-     margin: 0 auto;
-} */
-
 main {
      background-color: #999;
+     
 }
 
 header {
      width: 100%;
     /*  margin: 0 auto; */
-     background-color: aqua;
+     background-color: #fff;
+     border-bottom: 2px solid #d9d9d9;
+ 
 }
 
 
 /* 헤더 중앙 정렬 */
 header nav {
      width: calc(100% - 30px);
-     line-height: 5.0rem;
      margin: 0 auto;
-     background-color: aquamarine;
-     line-height: 5.0rem;
+     background-color: #fff;
+     height: 60px;
+     line-height: 60px;
 }
 
 nav .header_menu
@@ -43,28 +41,68 @@ i.icon{
 /* 커뮤니티 */
 .nav_txt{
      color: #333;
-     padding: 0 10px;
-     font-size: 1.6rem;
+     margin: 0 auto;
+     font-size: 1.5rem;
      font-weight: 600;
-     background-color: aqua;
-     width: 80px; 
+     
+     
 }
 .nav_left{
-     background-color: rgb(211, 53, 200);	
      display: inline-block;
      padding: 0 10px;
-     margin-right: 10px;
+     margin-right: 75px;
 }
 
 /* 오른쪽 알림챗내정보 */
-.nav_right{
-}
+
 
 
 .nav_right a
 {
-     background-color: rgb(255, 156, 156);
      display: inline-block;
+     padding: 0 5px;
+}
+
+
+/* 탭메뉴 */
+
+
+h1{
+     text-align: center;
+}
+section{
+     width: 600px;
+     margin:20px auto;
+}
+section .tab_list::after{
+     content: '';
+     display: block;
+     clear: both;
+}
+section .tab_list li{
+     width: 150px;
+     height: 40px;
+     background-color: tomato;
+     color: #fff;
+     text-align: center;
+     line-height: 40px;
+     float: left;
+}
+section .tab_cont{
+     height: 260px;
+     border: 1px solid tomato;
+     overflow: hidden;
+     overflow-y: scroll;
+}
+section .tab_cont li{
+     display: none;
+}
+section .tab_list li.on{/* .on 붙여써야 인식 */
+     background-color: rgb(61, 12, 4);
+     color: rgb(253, 137, 137);
+}
+section .tab_cont li.on{
+     display: block;
 }
 
 

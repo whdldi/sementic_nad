@@ -9,10 +9,8 @@
   <link rel="stylesheet" type="text/css" href="lib/Semantic-UI-CSS-master/semantic.css">
   <!-- 같은 폴더내의 lib폴더 안의 semantic-UI어쩌구 안의 semantic.min.css인데 min은 압축된거라 보기 불편하니 개발시에는 min을 때고, 업로드할때는 min을 붙힘 아래의 js 연결도 마찬가지-->
   <script src="https://code.jquery.com/jquery-3.1.1.min.js"
-    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
   <script src="lib/Semantic-UI-CSS-master/semantic.js"></script>
-  <!-- 잘 되는지 확인하기 위해 개발자 모드의 network로 들어가 reload 하면 name에 다운로드 받는지 확인가능 빨간색이면 경로가 잘못된것.-->
-
   <link href="css/font.css" rel="stylesheet" />
   <link href="css/reset.css" rel="stylesheet" />
   <link href="css/index.css" rel="stylesheet" />
@@ -38,50 +36,51 @@
 
 
     <!-- 1. 기본 버튼 -->
-    <button class="ui button">Follow</button>
-
-    <br><br>
-
-    <button class="ui button" tabindex="-1">
-      1번 버튼
-    </button>
-    <div class="ui button" tabindex="-1">
-      2번 버튼
+    <div class="ui large icon input">
+      <input type="text" placeholder="Search...">
+      <i class="search icon"></i>
     </div>
+    
+    <!-- 탭 메뉴 하기-->
+    <section>
+      <ul class="tab_list">
+           <li class="on">menu01</li>
+           <li>menu02</li>
+           <li>menu03</li>
+           <li>menu04</li>
+      </ul>
+      <!-- tab_list end -->
+      <ul class="tab_cont">
+           <li class="on">
+                <h2>title01</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas saepe sit, ab voluptates odit porro quos maxime facere, culpa alias est delectus tempora quis aspernatur dolorum beatae, repellendus earum excepturi.</p>
+                <img src="http://via.placeholder.com/300x300x" alt="이미지"/>
+           </li>
+           <li>
+                <h2>title02</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas saepe sit, ab voluptates odit porro quos maxime facere, culpa alias est delectus tempora quis aspernatur dolorum beatae, repellendus earum excepturi.</p>
+                <img src="http://via.placeholder.com/300x300x" alt="이미지"/>
+           </li>
+           <li>
+                <h2>title03</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas saepe sit, ab voluptates odit porro quos maxime facere, culpa alias est delectus tempora quis aspernatur dolorum beatae, repellendus earum excepturi.</p>
+                <img src="http://via.placeholder.com/300x300x" alt="이미지"/>
+           </li>
+           <li>
+                <h2>title04</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas saepe sit, ab voluptates odit porro quos maxime facere, culpa alias est delectus tempora quis aspernatur dolorum beatae, repellendus earum excepturi.</p>
+                <img src="http://via.placeholder.com/300x300x" alt="이미지"/>
+           </li>
+      </ul>
+    </section>
 
-    <br><br>
-    <!-- 3. 확인 취소 버튼 -->
-    <button class="ui secondary button">
-      Okay
-    </button>
-    <button class="ui button">
-      Cancel
-    </button>
-    <br><br>
-    <!-- 4. 애니메이션 들어간 버튼 : 다음 쇼핑 등 -->
-    <div class="ui animated button" tabindex="0">
-      <div class="visible content">Next</div>
-      <div class="hidden content">
-        <i class="right arrow icon"></i>
-      </div>
-    </div>
-
-    <div class="ui vertical animated button" tabindex="0">
-      <div class="hidden content">Shop</div>
-      <div class="visible content">
-        <i class="shop icon"></i>
-      </div>
-    </div>
-    <div class="ui animated fade button" tabindex="0">
-      <div class="visible content">Sign-up for a Pro account</div>
-      <div class="hidden content">
-        $12.99 a month
-      </div>
-    </div>
-    <br><br>
-    </div><!-- wrap end -->
 
   </main>
+
+
+  <script src="lib/jquery-3.6.0.min.js"></script>
+  <script src="js/index.js"></script>
+
 </body>
 
 </html>

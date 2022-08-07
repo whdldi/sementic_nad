@@ -2,8 +2,11 @@
 
 main {
      background-color: #999;
+     min-width:420px ;
      
 }
+
+/* header start *//* header start *//* header start */
 
 header {
      width: 100%;
@@ -23,11 +26,7 @@ header nav {
      line-height: 60px;
 }
 
-nav .header_menu
-{
- /*     text-align: center;
-     box-sizing: border-box; */
-}
+
 
 nav .header_menu {
      display: flex;
@@ -42,10 +41,8 @@ i.icon{
 .nav_txt{
      color: #333;
      margin: 0 auto;
-     font-size: 1.5rem;
+     font-size: 1.6rem;
      font-weight: 600;
-     
-     
 }
 .nav_left{
      display: inline-block;
@@ -53,56 +50,169 @@ i.icon{
      margin-right: 75px;
 }
 
-/* 오른쪽 알림챗내정보 */
-
-
-
 .nav_right a
 {
      display: inline-block;
      padding: 0 5px;
 }
+/* 오른쪽 알림챗내정보 */
 
 
-/* 탭메뉴 */
+
+/* header end *//* header end *//* header end */
 
 
-h1{
+
+
+/* search start *//* search start *//* search start */
+.searchbox{
+     width: calc(100% - 30px);
+     margin: 0 auto;
+     line-height: 60px;
+}
+
+/* sementic에 있던거 수정 */
+/* 검색아이콘 위치패딩 조정 */
+.ui.icon.input > input {
+     padding-right: 4em !important;
+     padding-left: 1em !important;
+ }
+
+ .ui.input {
+     width: 100%;
+     margin-top: 20px;
+     color: #999;
+}
+
+.ui.input > input {
+     font-family: 'Noto Sans KR', sans-serif;
+     font-weight: 500;
+     margin: 0 auto;
+     line-height: 1em;
+     padding: 1em 0em;
+     background: #FFFFFF;
+     border: 2px solid #ccc;
+     color: #444;
+     border-radius: 0.5rem;
+ }
+/* search end *//* search end *//* search end */
+
+
+
+
+
+
+
+
+
+/* tab start */
+main section{
+     width: calc(100% - 30px);
+     margin: 0 auto;
+     background-color: #fff;
+     height: 60px;
+     line-height: 60px;
+}
+
+/* 탭메뉴 제목 */
+.tab_list{
+     display: flex;
+     flex-wrap: nowrap;
+     white-space:nowrap;
+     width: 100%;
+     overflow-x: scroll;
+     
+     background-color: rgb(234, 234, 234);
+     /* border-bottom: 2px solid yellow; */
+     /* 폰트관련 */
      text-align: center;
+     font-size: 1.4rem;
+     font-weight: 500;
 }
-section{
-     width: 600px;
-     margin:20px auto;
+/* X 스크롤바 안보이게하기 */
+.tab_list::-webkit-scrollbar {display:none;}
+
+
+/* 전체,핫이슈 카테고리 버튼 */
+.tab_list .all,
+.tab_list .hot
+{
+     background-color: #999;
+     border-radius: 2em;
 }
-section .tab_list::after{
-     content: '';
-     display: block;
-     clear: both;
+.tab_list .hot{
+     color: #d20000;
+     background-color: #ffc7c7;
 }
-section .tab_list li{
-     width: 150px;
-     height: 40px;
-     background-color: tomato;
+
+/* 전체,핫이슈 카테고리 버튼 활성화 됐을때 */
+.tab_list .on.all{
+     background-color: #333;
      color: #fff;
+     border: none;
+}
+.tab_list .on.hot{
+     background-color: #d70007;
+     color: #fff;
+     border: none;
+}
+
+
+
+/* 카테고리버튼 */
+section .tab_list li{
+     margin: 5px;
+     padding: 4px 20px;
+     color: #333;
      text-align: center;
      line-height: 40px;
-     float: left;
 }
 section .tab_cont{
      height: 260px;
-     border: 1px solid tomato;
      overflow: hidden;
      overflow-y: scroll;
+     background-color: #999;
 }
 section .tab_cont li{
      display: none;
 }
-section .tab_list li.on{/* .on 붙여써야 인식 */
-     background-color: rgb(61, 12, 4);
-     color: rgb(253, 137, 137);
+
+/* 카테고리 눌렀을때 */
+/* .on 붙여써야 인식 */
+section .tab_list li.on{
+     color: #222;
+     font-weight: 700;
+     box-sizing: border-box;
+}
+section .tab_list::after{
+     content: '';
+     width: 100%;
+     height: 3px;
+     background-color: red;
+     display: block;
+}
+/* 눌렀을때 카테고리 아래선 */
+/* 나오긴 하는데, 누르면 전체,핫이슈처럼 세로길이 변화없게 고쳐야함. */
+section .tab_list li.on::after{
+     content: '';
+     height: 3px;
+     background-color: #929292;
+     display: block;
 }
 section .tab_cont li.on{
      display: block;
+     
 }
+/* all,hot은 카테고리 아래선 안나오게 함 */
+section .tab_list li.all.on::after,
+section .tab_list li.hot.on::after{
+     content:none;
+     height: 2px;
+     background-color: #929292;
+     display: block;
+}
+
+
+/* tab end */
 
 

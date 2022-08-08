@@ -106,25 +106,27 @@ i.icon{
 
 
 /* tab start */
-main section{
+/* main  */
+section{
+     /* 왼쪽오른쪽 메인 벗어나게해야함.... */
      width: calc(100% - 30px);
      margin: 0 auto;
      background-color: #fff;
      height: 60px;
      line-height: 60px;
+     position: relative;
+     z-index: 20;
+     border-bottom: 4px solid rgb(223, 223, 223);
 }
 
 /* 탭메뉴 제목 */
 .tab_list{
+     padding-left: 20px;
      display: flex;
      flex-wrap: nowrap;
      white-space:nowrap;
      width: 100%;
      overflow-x: scroll;
-     
-     background-color: rgb(234, 234, 234);
-     /* border-bottom: 2px solid yellow; */
-     /* 폰트관련 */
      text-align: center;
      font-size: 1.4rem;
      font-weight: 500;
@@ -133,28 +135,35 @@ main section{
 .tab_list::-webkit-scrollbar {display:none;}
 
 
+
 /* 전체,핫이슈 카테고리 버튼 */
 .tab_list .all,
 .tab_list .hot
 {
-     background-color: #999;
      border-radius: 2em;
+}
+.tab_list .all{
+     color: #333;
+     background-color: #E5E5E5;
 }
 .tab_list .hot{
      color: #d20000;
      background-color: #ffc7c7;
 }
 
+
 /* 전체,핫이슈 카테고리 버튼 활성화 됐을때 */
 .tab_list .on.all{
      background-color: #333;
      color: #fff;
      border: none;
+     transition: 0.24s;
 }
 .tab_list .on.hot{
      background-color: #d70007;
      color: #fff;
      border: none;
+     transition: 0.24s;
 }
 
 
@@ -163,55 +172,61 @@ main section{
 section .tab_list li{
      margin: 5px;
      padding: 4px 20px;
-     color: #333;
+     color: #999;
      text-align: center;
      line-height: 40px;
 }
 section .tab_cont{
      height: 260px;
-     overflow: hidden;
+     /* overflow: hidden; */
      overflow-y: scroll;
-     background-color: #999;
+     /* background-color: #999; */
 }
 section .tab_cont li{
      display: none;
 }
 
+
+
+
 /* 카테고리 눌렀을때 */
 /* .on 붙여써야 인식 */
 section .tab_list li.on{
-     color: #222;
+     color: #333;
      font-weight: 700;
-     box-sizing: border-box;
+     position: relative;
+     transition: 0.24s;
+     
 }
+
+/* 눌렀을때 선택된 카테고리 바 표시 */
+section .tab_list li.on::after{
+     position: absolute;
+     left:50%;
+     transform : translate(-50%, 140%);
+     content: '';
+     width: 80%;
+     background-color: green;
+     height: 4px;
+     border-radius: 10px;
+     display: block;
+}
+/* 선택하면 나오긴하는데 녹색 바가ㅏ잘려보임 고치기 */
+
+
 section .tab_list::after{
      content: '';
      width: 100%;
-     height: 3px;
-     background-color: red;
-     display: block;
-}
-/* 눌렀을때 카테고리 아래선 */
-/* 나오긴 하는데, 누르면 전체,핫이슈처럼 세로길이 변화없게 고쳐야함. */
-section .tab_list li.on::after{
-     content: '';
-     height: 3px;
-     background-color: #929292;
      display: block;
 }
 section .tab_cont li.on{
      display: block;
-     
 }
-/* all,hot은 카테고리 아래선 안나오게 함 */
+/* all,hot은 카테고리 아래선 투명으로 안보이게 함 */
 section .tab_list li.all.on::after,
 section .tab_list li.hot.on::after{
-     content:none;
-     height: 2px;
-     background-color: #929292;
-     display: block;
+     background-color: transparent;
 }
-
 
 /* tab end */
 

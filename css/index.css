@@ -264,6 +264,49 @@ i.icon{
 /* search end */
 
 
+/* d아.. 이부분 하다가 안고쳐지면 시멘틱쓰지말고 내가 만들기*/
+/* list_title start*/
+.free_box 
+{
+     background-color: rgba(83, 45, 45, 0.294);
+     width: 100%;
+     
+}
+.free_box_cont{
+     background-color: #d70007;
+}
+/* sementic EDIT Start */
+.free_box .ui.items > .item {
+     
+}
+.ui.unstackable.items .image {
+ overflow: hidden;
+    width: 70px !important;
+    height: 55px;
+    background-color: green;
+}
+
+.ui.items > .item > .image + .content {
+     width: 100%;
+      display: inline-block; 
+     -ms-flex-item-align: middle;
+     align-self: middle;
+     padding-left: 1em;
+ }
+ 
+/* sementic EDIT end */
+
+.description li{
+     display: inline-block;
+     color: #333;
+     background-color: #dfdfdf;
+}
+.description li.author{
+     display: inline-block;
+     color: #333;
+     background-color: #dfdfdf;
+}
+/* list_title end*/
 
 
 /* Tab Cate Cont END *//* Tab Cate Cont END */

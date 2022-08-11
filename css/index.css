@@ -224,7 +224,7 @@ i.icon{
 
 
 .tab_cont{
-     height: 260px;
+     /* height: 100vh; */
      overflow-y: scroll;
      width: calc(100% - 50px);
      margin: 0 auto;
@@ -253,6 +253,7 @@ i.icon{
 .ui.input > input {
      font-family: 'Noto Sans KR', sans-serif;
      font-weight: 500;
+     font-size: 1.2em;
      margin: 0 auto;
      line-height: 1em;
      padding: 1em 0em;
@@ -264,48 +265,124 @@ i.icon{
 /* search end */
 
 
-/* d아.. 이부분 하다가 안고쳐지면 시멘틱쓰지말고 내가 만들기*/
 /* list_title start*/
-.free_box 
+.free_box_inner{
+     cursor: pointer;
+     width: 80%;
+     height: 70px;
+     background-color: #333;
+}
+.free_box_inner > div
 {
-     background-color: rgba(83, 45, 45, 0.294);
-     width: 100%;
+    /* width: 100%; */
+     height: 100%;
+     display: flex;
+     flex-wrap: nowrap; 
+}
+/* 자유글 썸네일 */
+.free_box_inner .left_boxes img{
+     border-radius: 10px;
+     display: inline-block;
+}
+.inner_text{
+     width: 300px;
+     margin-left: 20px;
+}
+/* wrap */
+.board_detail_wrap{
+     background-color: #999;
+     display: inline-block;
+     /* line-height: 70px; */
+     /* height: 50%; */
+}
+.board_detail_wrap ul li.board_date,
+.board_detail_wrap ul li.board_view
+{
+     padding-left: 20px;
+}
+/* 자유글 제목 */
+.free_box_inner .left_boxes .board_title{
      
+     font-size: 1.7em;
+     font-weight: 500;
+     display: inline-block; 
+     vertical-align: top; 
+     background-color: #d20000;
+     /* 1줄이상 가면 말줄임 */
+     overflow:hidden;
+     display:box; 
+     display:-webkit-box;
+     -webkit-box-orient:vertical;
+     -webkit-line-clamp:1;
+     text-overflow:ellipsis;     
 }
-.free_box_cont{
-     background-color: #d70007;
+/* 자유글 상세 */
+
+.free_box_inner .left_boxes .board_detail{
+     padding-top: 10px;
+     background-color: beige;
+     height: 30px;
 }
-/* sementic EDIT Start */
-.free_box .ui.items > .item {
-     
-}
-.ui.unstackable.items .image {
- overflow: hidden;
-    width: 70px !important;
-    height: 55px;
-    background-color: green;
+.free_box_inner .left_boxes .board_detail li{
+     font-size: 1.3em;
+     display: inline-block;
+     height: 20px;
+     line-height: 20px;
+     vertical-align: top;
 }
 
-.ui.items > .item > .image + .content {
-     width: 100%;
-      display: inline-block; 
-     -ms-flex-item-align: middle;
-     align-self: middle;
-     padding-left: 1em;
- }
- 
-/* sementic EDIT end */
+/* 글쓴이 */
+.free_box_inner .left_boxes .board_detail li.board_author{
+     font-size: 1.6em;
+     vertical-align: top;
+     line-height:18px;
+     font-weight: 600;
+}
+/* Date */
+.free_box_inner .left_boxes .board_detail li.board_date {
+     line-height:22px;
+     font-size: 1.1em;
+}
+/* View수 */
+.free_box_inner .left_boxes .board_detail li.board_view {
+     color:#ff5555;
+     font-weight: 600;
+}
+.free_box_inner .left_boxes .board_detail li.board_view i{
+     font-size: 1em;
+     color: #333;
+}
 
-.description li{
-     display: inline-block;
-     color: #333;
-     background-color: #dfdfdf;
+/* 자유글 댓글 */
+.comment_go{
+     cursor: pointer;
+     position: relative;
+     width: 60px; 
+     height: 70px;
+     margin: 0 !important;
+     border-radius: 10px;
+     background-color: #f4f4f4;
 }
-.description li.author{
-     display: inline-block;
-     color: #333;
-     background-color: #dfdfdf;
+.comment_go i{
+     position: absolute;
+     top: -3px;
+     left:50%;
+     transform : translate(-50%);
+     color: #777;
+     font-size: 1.3em;
 }
+
+
+.comment_go p{
+     position: absolute;
+     left:50%;
+     transform : translate(-50%);
+     top: 40px;
+     font-size: 1em;
+}
+
+/*  왜 코멘트가. 안 붙지.. 마진이 생김...*/
+
 /* list_title end*/
 
 

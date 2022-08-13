@@ -254,7 +254,7 @@ i.icon{
 .ui.input > input {
      font-family: 'Noto Sans KR', sans-serif;
      font-weight: 500;
-     font-size: 1.2em;
+     font-size: 1em;
      margin: 0 auto;
      line-height: 1em;
      padding: 1em 0em;
@@ -312,7 +312,7 @@ i.icon{
 }
 /* 자유글 제목 */
 .free_box_inner .left_boxes .board_title{
-     font-size: 1.7em;
+     font-size: 1.3em;
      font-weight: 500;
      display: inline-block; 
      vertical-align: top; 
@@ -333,7 +333,7 @@ i.icon{
      height: 36px;
 }
 .free_box_inner .left_boxes .board_detail li{
-     font-size: 1.3em;
+     font-size: 1.1em;
      display: inline-block;
      height: 20px;
      line-height: 20px;
@@ -342,15 +342,14 @@ i.icon{
 
 /* 글쓴이 */
 .free_box_inner .left_boxes .board_detail li.board_author{
-     font-size: 1.6em;
+     font-size: 1.3em;
      vertical-align: top;
-     line-height:18px;
      font-weight: 600;
 }
 /* Date */
 .free_box_inner .left_boxes .board_detail li.board_date {
      line-height:22px;
-     font-size: 1.1em;
+     font-size: 1.0em;
 }
 /* View수 */
 .free_box_inner .left_boxes .board_detail li.board_view {

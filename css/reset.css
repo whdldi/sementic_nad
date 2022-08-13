@@ -18,10 +18,11 @@
 
 html,
 body {
-     /* font-size: 62.5%; */
+     font-size: 62.5%;
      /* 얘를 살리면 원하는 레이아웃으로 들어가지만,
      시멘틱UI에서 만든 css font-size값이 위처럼 적용되므로 깨지므로
      %적용하기전으로 바꿈..*/
+     /* 폰트 다시 살려봄 */
      min-width: 395px; 
      line-height: 1;
 }

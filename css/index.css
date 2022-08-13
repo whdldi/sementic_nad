@@ -2,9 +2,9 @@
 
 main {
      background-color: #999;
-     min-width:420px ;
-     
+     min-width:320px ;
 }
+
 
 /* header start *//* header start *//* header start */
 
@@ -80,7 +80,7 @@ i.icon{
      margin: 0 auto;
      background-color: #fff;
      height: 60px;
-     line-height: 60px;
+     /* line-height: 60px; */
      position: relative;
      z-index: 20;
 
@@ -174,6 +174,7 @@ i.icon{
 }
 .tab_cont li.on{
      display: block;
+     height: 100vh;
 }
 /* all,hot은 카테고리 아래선 투명으로 안보이게 함 */
 .tab_list li.all.on::after,
@@ -266,27 +267,36 @@ i.icon{
 
 
 /* list_title start*/
+.article_box{
+     margin-top: 30px;
+     background-color: #333;
+     height: 70px;
+}
 .free_box_inner{
+     display: inline-block;
      cursor: pointer;
      width: 80%;
      height: 70px;
-     background-color: #333;
+     background-color: #666;
 }
 .free_box_inner > div
 {
     /* width: 100%; */
      height: 100%;
-     display: flex;
-     flex-wrap: nowrap; 
+     /* display: flex; */
+     /* flex-wrap: nowrap;  */
 }
 /* 자유글 썸네일 */
 .free_box_inner .left_boxes img{
+     float: left;
      border-radius: 10px;
      display: inline-block;
 }
 .inner_text{
-     width: 300px;
+     float: left;
+     width: 70%;
      margin-left: 20px;
+     height: 100%;
 }
 /* wrap */
 .board_detail_wrap{
@@ -302,7 +312,6 @@ i.icon{
 }
 /* 자유글 제목 */
 .free_box_inner .left_boxes .board_title{
-     
      font-size: 1.7em;
      font-weight: 500;
      display: inline-block; 
@@ -319,9 +328,9 @@ i.icon{
 /* 자유글 상세 */
 
 .free_box_inner .left_boxes .board_detail{
-     padding-top: 10px;
+     padding-top: 17px;
      background-color: beige;
-     height: 30px;
+     height: 36px;
 }
 .free_box_inner .left_boxes .board_detail li{
      font-size: 1.3em;
@@ -354,12 +363,14 @@ i.icon{
 }
 
 /* 자유글 댓글 */
+
+
 .comment_go{
+     float: right;
      cursor: pointer;
      position: relative;
      width: 60px; 
      height: 70px;
-     margin: 0 !important;
      border-radius: 10px;
      background-color: #f4f4f4;
 }
@@ -381,7 +392,6 @@ i.icon{
      font-size: 1em;
 }
 
-/*  왜 코멘트가. 안 붙지.. 마진이 생김...*/
 
 /* list_title end*/
 
@@ -391,5 +401,4 @@ i.icon{
 
 
 /* tab end */
-
 

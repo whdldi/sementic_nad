@@ -6,16 +6,27 @@
      box-sizing: border-box;
 }
 
+/* sementic 터치/호버시 파란색-> 검은색 */
+.ui.input.focus>input, .ui.input>input:focus {
+     border-color: #ccc; 
+ }
+ a:hover {
+     color: #333;
+     text-decoration: none;
+ }
+
+
 html,
 body {
      /* font-size: 62.5%; */
      /* 얘를 살리면 원하는 레이아웃으로 들어가지만,
      시멘틱UI에서 만든 css font-size값이 위처럼 적용되므로 깨지므로
      %적용하기전으로 바꿈..*/
+     min-width: 470px;
+     /* 470으로 맞춰서 튕김방지 */
      line-height: 1;
 }
 
-/* 이러면 1.6rem이라했을때 16px으로 편히 볼수있음*/
 li {
      list-style: none;
 }

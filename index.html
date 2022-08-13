@@ -10,6 +10,8 @@
   <!-- 같은 폴더내의 lib폴더 안의 semantic-UI어쩌구 안의 semantic.min.css인데 min은 압축된거라 보기 불편하니 개발시에는 min을 때고, 업로드할때는 min을 붙힘 아래의 js 연결도 마찬가지-->
   <script src="https://code.jquery.com/jquery-3.1.1.min.js"
   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" referrerpolicy="no-referrer"/> 
+
   <script src="lib/Semantic-UI-CSS-master/semantic.js"></script>
   <link href="css/font.css" rel="stylesheet" />
   <link href="css/reset.css" rel="stylesheet" />
@@ -47,7 +49,7 @@
       </ul>
       <!-- tab_list end -->
       <ul class="tab_cont">
-           <li class="on">
+           <li class="on clearfix">
                   <!-- search box start-->
                   <div class="searchbox">
                     <div class="ui large icon input">
@@ -57,33 +59,51 @@
                   </div>
                   <!-- search box end-->
 
-                  <a class="free_box_inner">
+                  <div class="article_box">
+                    <a class="free_box_inner">
 
-                    <div class="left_boxes">
-                      <img src="https://via.placeholder.com/80x70"alt="이미지가로x세로"/>
-                      <div class="inner_text">
-                        <p class="board_title">여러분 한 번만 꼭 읽어주세요</p>
-  
-                        <div class="board_detail_wrap">
-                          <ul class="board_detail">
-                            <li class="board_author">ssss</li>
-                            <li class="board_date">22.01.28</li>
-                            <li class="board_view"><i class="eye icon"></i>253</li>
-                          </ul>
-                        </div>
+                      <div class="left_boxes clearfix">
+                        <img src="https://via.placeholder.com/80x70"alt="이미지가로x세로"/>
+                            <div class="inner_text">
+                              <p class="board_title">여러분 한 번만 꼭 읽어주세요</p>
+        
+                                    <div class="board_detail_wrap">
+                                      <ul class="board_detail">
+                                        <li class="board_author">ssss</li>
+                                        <li class="board_date">22.01.28</li>
+                                        <li class="board_view"><i class="eye icon"></i>253</li>
+                                      </ul>
+                                    </div>
+                            </div>
                       </div>
+                    </a>
 
-                    </div>
-                  </a>
+                    <a class="comment_go">
+                      <i class="comment outline icon"></i>
+                      <p>42</p>
+                    </a>
 
-                  <a class="comment_go">
-                    <i class="comment outline icon"></i>
-                    <p>42</p>
-                  </a>
+                </div>
+
+
                   <!-- free_box end -->
                   
                 
            </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
            <li>
                   <!-- search box start-->
                   <div class="searchbox">
@@ -94,7 +114,11 @@
                   </div>
                   <!-- search box end-->
                 <h2>핫이슈</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas saepe sit, ab voluptates odit porro quos maxime facere, culpa alias est delectus tempora quis aspernatur dolorum beatae, repellendus earum excepturi.</p>
+                
+
+<!-- Component - Club List -->
+
+
            </li>
            <li>
                   <!-- search box start-->
@@ -142,6 +166,10 @@
                   </div>
                   <!-- search box end-->
                 <h2>기타</h2>
+
+
+
+
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas saepe sit, ab voluptates odit porro quos maxime facere, culpa alias est delectus tempora quis aspernatur dolorum beatae, repellendus earum excepturi.</p>
            </li>
       </ul>

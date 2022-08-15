@@ -293,7 +293,7 @@ i.icon {
      height: 50px;
 }
 
-.free_box_inner>div {
+.free_box_inner > div {
      height: 100%;
 }
 
@@ -319,8 +319,8 @@ i.icon {
      height: 20px;
 }
 
-.board_detail_wrap ul li.board_date,
-.board_detail_wrap ul li.board_view {
+.board_detail_wrap p.board_date,
+.board_detail_wrap p.board_view {
      padding-left: 20px;
 }
 
@@ -341,19 +341,18 @@ i.icon {
 }
 
 /* 자유글 상세 */
-.free_box_inner .left_boxes .board_detail li {
+.free_box_inner .left_boxes .board_detail p {
      font-size: 1.1em;
      display: inline-block;
      vertical-align: top;
      line-height: 25px;
      height: 25px;
-     /* 444 */
      color: #999;
      
 }
 
 /* 글쓴이 */
-.free_box_inner .left_boxes .board_detail li.board_author {
+.free_box_inner .left_boxes .board_detail p.board_author {
      font-size: 1.3em;
      vertical-align: top;
      font-weight: 500;
@@ -361,14 +360,14 @@ i.icon {
 }
 
 /* Date */
-.free_box_inner .left_boxes .board_detail li.board_date {
+.free_box_inner .left_boxes .board_detail p.board_date {
      font-size: 1.0em;
      line-height: 29px;
 }
 
 /* View수 */
 
-.free_box_inner .left_boxes .board_detail li.board_view {
+.free_box_inner .left_boxes .board_detail p.board_view {
      line-height: 29px;
      font-weight: 500;
 }
@@ -378,7 +377,7 @@ i.icon {
      color: #ff5555;
 }
 
-.free_box_inner .left_boxes .board_detail li.board_view i {
+.free_box_inner .left_boxes .board_detail p.board_view i {
      font-size: 1em;
 }
 

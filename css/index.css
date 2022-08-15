@@ -318,6 +318,7 @@ i.icon {
      display: inline-block;
      line-height: 70px;
      height: 20px;
+     background-color: #333;
 }
 
 .board_detail_wrap ul li.board_date,

@@ -317,6 +317,7 @@ i.icon {
 .board_detail_wrap {
      display: inline-block;
      line-height: 70px;
+     height: 20px;
 }
 
 .board_detail_wrap ul li.board_date,

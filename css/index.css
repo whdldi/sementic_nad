@@ -347,6 +347,8 @@ i.icon {
      display: inline-block;
      vertical-align: top;
      line-height: 25px;
+     height: 25px;
+     /* 444 */
      color: #999;
      
 }

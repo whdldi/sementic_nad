@@ -27,7 +27,6 @@ body {
      min-width: 495px; 
   /* 글자크기 조정하고 395<note10 에서 볼때 안깨지게 해야함... */
      line-height: 1;
-     background-color: pink;
 }
 
 li {

@@ -202,7 +202,7 @@ i.icon {
 
 /* 전체,핫이슈 카테고리 버튼 활성화 됐을때 */
 .tab_list .on.all {
-     background-color: #32d700;
+     background-color: #333;
      color: #fff;
      border: none;
      transition: 0.24s;
@@ -222,7 +222,7 @@ i.icon {
 
 .tab_cont {
      overflow-y: scroll;
-     width: 95%;
+     width: calc(100% - 50px);
      margin: 0 auto;
      line-height: 60px;
 }

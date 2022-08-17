@@ -222,7 +222,7 @@ i.icon {
 
 .tab_cont {
      overflow-y: scroll;
-     width: calc(100% - 50px);
+     width: 95%;
      margin: 0 auto;
      line-height: 60px;
 }
